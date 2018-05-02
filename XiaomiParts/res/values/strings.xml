@@ -24,4 +24,17 @@
 
     <string name="display_title">Display</string>
     <string name="device_doze_title">Ambient display</string>
+    <string name="category_screen_color">Screen Color</string>
+    <string name="rgb_red">Red</string>
+    <string name="rgb_blue">Blue</string>
+    <string name="rgb_green">Green</string>
+    <string name="category_kcal_extras">Fine Tuning</string>
+    <string name="rgb_min">Minimum RGB Value</string>
+    <string name="sat_intensity">Saturation Intensity</string>
+    <string name="scr_hue">Screen Hue</string>
+    <string name="scr_val">Screen Value</string>
+    <string name="scr_cont">Screen Contrast</string>
+    <string name="plus_one">+1</string>
+    <string name="minus_one">-1</string>
+    <string name="restore_default">Default</string>
 </resources>
