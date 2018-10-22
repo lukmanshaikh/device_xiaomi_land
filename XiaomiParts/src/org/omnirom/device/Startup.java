@@ -50,5 +50,13 @@ public class Startup extends BroadcastReceiver {
         restore(TapToWakeSwitch.getFile(), enabled);
 
         VibratorStrengthPreference.restore(context);
+        KcalRGBGreenPreference.restore(context);
+        KcalRGBBluePreference.restore(context);
+        KcalRGBMinPreference.restore(context);
+        KcalRGBMinPreference.restore(context);
+        KcalSatIntensityPreference.restore(context);
+        KcalScreenHuePreference.restore(context);
+        KcalScreenValuePreference.restore(context);
+        KcalScreenContrPreference.restore(context);
     }
 }
