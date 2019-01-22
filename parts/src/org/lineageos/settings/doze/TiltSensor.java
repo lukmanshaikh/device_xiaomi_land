@@ -49,6 +49,7 @@ public class TiltSensor implements SensorEventListener {
         mSensorManager = mContext.getSystemService(SensorManager.class);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_TILT_DETECTOR);
 	mExecutorService = Executors.newSingleThreadExecutor();
+        mExecutorService = Executors.newSingleThreadExecutor();
     }
 
     private Future<?> submit(Runnable runnable) {
@@ -81,6 +82,7 @@ public class TiltSensor implements SensorEventListener {
         submit(() -> {
             mSensorManager.registerListener(this, mSensor,
                     SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
+            mEntryTimestamp = SystemClock.elapsedRealtime();
         });
         mEntryTimestamp = SystemClock.elapsedRealtime();
     }

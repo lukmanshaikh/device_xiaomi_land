@@ -20,8 +20,6 @@ package org.lineageos.settings.doze;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.os.UserHandle;
 import android.support.v7.preference.PreferenceManager;
 import android.provider.Settings;
@@ -41,7 +39,7 @@ public final class DozeUtils {
 
     protected static final String ALWAYS_ON_DISPLAY = "always_on_display";
 
-    protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
+    protected static final String CATEG_PICKUP_SENSOR = "tilt_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
 
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
@@ -133,14 +131,5 @@ public final class DozeUtils {
     public static boolean sensorsEnabled(Context context) {
         return isPickUpEnabled(context) || isHandwaveGestureEnabled(context)
                 || isPocketGestureEnabled(context);
-    }
-
-    protected static Sensor getSensor(SensorManager sm, String type) {
-        for (Sensor sensor : sm.getSensorList(Sensor.TYPE_ALL)) {
-            if (type.equals(sensor.getStringType())) {
-                return sensor;
-            }
-        }
-        return null;
     }
 }
