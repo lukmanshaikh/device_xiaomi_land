@@ -53,6 +53,10 @@ lib/soundfx/libdirac.so
 lib/libDiracAPI_SHARED.so
 vendor/etc/diracmobile.config
 
+# Audiosphere
+lib/soundfx/libasphere.so
+lib64/soundfx/libasphere.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
