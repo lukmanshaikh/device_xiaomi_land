@@ -1,7 +1,7 @@
 # Audio dirac - from stock - MIUI V9.5.8.0.MALMIFD
-lib/soundfx/libdirac.so
-lib/libDiracAPI_SHARED.so
-vendor/etc/diracmobile.config
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+lib/libDiracAPI_SHARED.so:vendor/lib/libDiracAPI_SHARED.so
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
 vendor/lib/libhwdaphal.so
 vendor/lib64/libhwdaphal.so
 
