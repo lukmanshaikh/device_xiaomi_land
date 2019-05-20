@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.0-service
 
-# Device-specific settings
+# XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
 
