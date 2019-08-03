@@ -1,0 +1,3 @@
+add_lunch_combo lineage_land-user
+add_lunch_combo lineage_land-userdebug
+add_lunch_combo lineage_land-eng
